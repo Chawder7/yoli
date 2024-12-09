@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.hero {
+    background: url('img/hero2.jpg') no-repeat center center;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #2196F3; /* Azul Cielo */
+}
+section {
+    padding: 60px 0;
+}
+
+#inicio {
+    background-color: #4CAF50; /* Verde Serpiente */
+}
+
+#acerca {
+    background-color: 	#50C878; /* Dorado Emplumado */
+    color: #FFFFFF;
+}
+#niveles {
+    background-color: #d7d7d7; /* Blanco Puro */
+    color: #000000;
+}
+#similares {
+    background-color: #2196F3; /* Azul Cielo */
+    color: #FFFFFF;
+}
+
+#instalacion {
+    background-color: #4CAF50; /* Verde Serpiente */
+    color: #FFFFFF;
+}
+
+#contacto {
+    padding: 20px 0;
+    background-color: #FFC107; /* Dorado Emplumado */
+    color: #FFFFFF;
+    text-align: center;
+}

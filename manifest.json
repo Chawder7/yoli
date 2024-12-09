@@ -1,0 +1,22 @@
+{
+    "name": "Yoli: Los huesos de la creacion",
+    "short_name": "YOLI",
+    "description": "Aplicacion web sobre el juego Yoli en busca de los huesos de la vida",
+    "start_url":"./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "orientation": "portrait",
+    "icons":[
+        {
+            "src": "./img/icon2.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/icon3.png",
+            "sizes": "512x512",
+            "type": "image/png"  
+        }
+    ]
+}
