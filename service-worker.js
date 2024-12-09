@@ -5,6 +5,14 @@ const urlsToCache=[
     './app.js',
     './img/icon2.png',
     './img/icon3.png',
+    './img/paso.jpeg',
+    './img/paso2.jpeg',
+    './img/inst.png',
+    './img/tik.png',
+    './img/face.png',
+    './img/nivel3.jpeg',
+    './img/nivel2.jpeg',
+    './img/nivel1.jpeg',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',
 ];
 
