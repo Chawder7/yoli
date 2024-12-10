@@ -3,6 +3,7 @@ const urlsToCache=[
     './',
     './index.html',
     './app.js',
+    './style.css',
     './img/icon2.png',
     './img/icon3.png',
     './img/paso.jpeg',
@@ -32,12 +33,28 @@ self.addEventListener('activate', event =>{
     console.log('Service Worker activado');
 });
 
-self.addEventListener('fetch', event =>{
-    event.respondWith(
-        caches.match(event.request)
-        .then(response =>{
-            return response || fetch(event.request);
-        })
-    );
+self.addEventListener('fetch', (event) => { 
+    if (event.request.url.includes('/games')) 
+        { event.respondWith( caches.match(event.request) 
+            .then((response) => { 
+                if (response) { 
+                    return response; 
+                } 
+                return fetch(event.request).then( (fetchResponse) => { 
+                    return caches.open(CACHE_NAME).then((cache) => { 
+                        cache.put(event.request, fetchResponse.clone()); 
+                        return fetchResponse; 
+                    }); 
+                } 
+            ); 
+        }) 
+    ); 
+    } else { 
+        event.respondWith( caches.match(event.request) 
+        .then((response) => { 
+            return response || fetch(event.request); 
+            }) 
+        ); 
+    } 
 });
 
