@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" 
+        content="
+            default-src 'self';
+            script-src 'self' https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com;
+            style-src 'self' https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com;
+            img-src 'self' data:;
+            connect-src 'self' https://mmo-games.p.rapidapi.com;
+            object-src 'none';
+    ">
     <title>YOLI</title>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
@@ -10,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar fixed-top" style="background-color: #2a8812;">
+    <nav class="navbar fixed-top" style="background-color: #52c75d;">
         <div class="container">
             <h1><a class="navbar-brand" href="#">YOLI</a></h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +46,7 @@
     </section>
     <section id="acerca">
         <div class="container">
-            <h2>Acerca del Juego</h2>
+            <h2 class="section-title">Acerca del Juego</h2>
             <h4>Historia del juego </h4>
             <p class="text-justify">
                 El videojuego narra la historia de la creaciòn del mundo de origen nahuatl, el juego narra la historia del dios
@@ -48,13 +57,37 @@
                 la historia de la creación se resume a manera de niveles con elementos de los 9 circulos la travesía por las
                 locaciones en el juego donde en cada nivel se encontraran distintas mecanicas y objetvos.
             </p>
-            <div class="card">
+            <div class="card-acerca">
                 <img src="./img/nivel1.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Nivel 1</h5>
-                  <p class="card-text">Escenario basado en los primeros 3 niveles del mictlan donde se aprecian un sendero de flor de los
-                    muertos pasando por un terreno en un paso de montañas y culminando con el campo de pedernales</p>
-                  <p class="card-text"><small class="text-muted">FAcil</small></p>
+                  <h5 class="card-title text-center">Quetzalcóatl</h5>
+                  <p class="card-text">Equipado con arco, felchas y  macuahuitl. Con esto se arbira paso a traves del Mictlán</p>
+                  <p class="card-text"><small class="text-pj">P. Jugable</small></p>
+                </div>
+            </div>
+            <div class="card-acerca">
+                <img src="./img/nivel1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Almas en Pena</h5>
+                  <p class="card-text">Almas en pena que vagan en las tierras del mictlan al no
+                    encontrar descanso.</p>
+                  <p class="card-text"><small class="text-enemy">Enemigo</small></p>
+                </div>
+            </div>
+            <div class="card-acerca">
+                <img src="./img/nivel1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Xochitónal</h5>
+                  <p class="card-text">La bestia que atormenta a los caídos que no fueron buenos en vida con los animales</p>
+                  <p class="card-text"><small class="text-boss">Boss</small></p>
+                </div>
+            </div>
+            <div class="card-acerca">
+                <img src="./img/nivel1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Mictlantecuhtli y Mictecacíhuatl</h5>
+                  <p class="card-text">Principales antagonistas en el relato inspirados en el señor y señora de la muerte.</p>
+                  <p class="card-text"><small class="text-ant">Antagonista</small></p>
                 </div>
             </div>
             <p>Epopeya con historia lineal</p>
@@ -66,29 +99,29 @@
     </section>
     <section id="niveles">
         <div class="container">
-            <h2>Niveles</h2>
-            <div class="card">
+            <h2 class="section-title" style="background-color: #A45D3D;">Niveles</h2>
+            <div class="card-niveles">
                 <div class="card-body">
                   <h5 class="card-title">Nivel 1</h5>
-                  <p class="card-text">Escenario basado en los primeros 3 niveles del mictlan donde se aprecian un sendero de flor de los
+                  <p class="card-text text-justify">Escenario basado en los primeros 3 niveles del mictlan donde se aprecian un sendero de flor de los
                     muertos pasando por un terreno en un paso de montañas y culminando con el campo de pedernales</p>
-                  <p class="card-text"><small class="text-muted">FAcil</small></p>
+                  <p class="card-text"><small class="text-muted">Facil</small></p>
                 </div>
                 <img src="./img/nivel1.jpeg" class="card-img-bottom" alt="...">
             </div>
-            <div class="card ">
+            <div class="card-niveles">
                 <div class="card-body ">
                   <h5 class="card-title">Nivel 2</h5>
-                  <p class="card-text">Escenario basado en los siguientes 3 niveles del mictlan donde te espera una travecia
+                  <p class="card-text text-justify">Escenario basado en los siguientes 3 niveles del mictlan donde te espera una travecia
                     por la nieve y montñas</p>
                   <p class="card-text"><small class="text-muted">Normal</small></p>
                 </div>
                 <img src="./img/nivel2.jpeg" class="card-img-bottom" alt="...">
             </div>
-            <div class="card">
+            <div class="card-niveles">
                 <div class="card-body">
                   <h5 class="card-title">Nivel 3</h5>
-                  <p class="card-text">En este escenario se encuentran los últimos 3 niveles del mictlan así como la pelea final contra los dioses
+                  <p class="card-text text-justify">En este escenario se encuentran los últimos 3 niveles del mictlan así como la pelea final contra los dioses
                     antaganistas, dichos escenarios son basados en agua sobre una balsa y un escerario repleto de agua así
                     como una niebla espesa</p>
                   <p class="card-text"><small class="text-muted">Dificil</small></p>
@@ -99,7 +132,7 @@
     </section>
     <section id="similares">
         <div class="container mt-4">
-            <h1>Lista de Juegos</h1> 
+            <h1 class="section-title" style="background-color: #317D6B;">Lista de Juegos</h1> 
             <div id="gamesCarousel" class="carousel slide" data-bs-ride="carousel"> 
                 <div class="carousel-inner" id="games"> 
             </div> 
@@ -117,21 +150,20 @@
     
     <section id="instalacion" class="py-5">
         <div class="container">
-            <h2>Instalación</h2>
-            <p>Instrucciones para instalar la PWA:</p>
-            <div class="card">
+            <h2 class="section-title" style="background-color: #2A924F;">Instalación</h2>
+            <div class="card-instalacion">
                 <div class="card-body">
                     <p>Da clic en el siguiente botón para instalar la aplicación:</p>
                     <button id="installBtn" class="btn btn-primary">Instalar Aplicación</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-instalacion">
                 <div class="card-body">
                     <p>Despues en la nueva ventana daremos "Instalar"</p>
                 </div>
                 <img src="./img/paso.jpeg" class="card-img-bottom" alt="...">
             </div>
-            <div class="card">
+            <div class="card-instalacion">
                 <div class="card-body">
                     <p>Y ahora la aplicacion esta lista para usarse</p>
                 </div>

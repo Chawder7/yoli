@@ -46,7 +46,7 @@ async function fetchGames() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const result = await response.json(); 
-    const topTenGames = result.slice(0, 10); 
+    const topTenGames = result.slice(10, 21); 
     displayGames(topTenGames); 
   } catch (error) {
     console.error('Error fetching the games:', error);
@@ -77,7 +77,7 @@ function loadCachedGames(){
   caches.match(url).then(response =>{
     if(response){
       response.json().then(data=>{
-        const topTenGames = data.slice(0,10);
+        const topTenGames = data.slice(10,21);
         displayGames(topTenGames)
       });
     }

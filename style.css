@@ -9,35 +9,38 @@ body {
     padding: 100px 0;
     background-color: #2196F3; /* Azul Cielo */
 }
+.text-justify { 
+    text-align: justify; 
+}
 section {
     padding: 60px 0;
 }
 
 #inicio {
-    background-color: #4CAF50; /* Verde Serpiente */
+    background-color: #185730; /* Verde Serpiente */
 }
 
 #acerca {
-    background-color: 	#50C878; /* Dorado Emplumado */
+    background-color: 	#185730; /* Dorado Emplumado */
     color: #FFFFFF;
 }
 #niveles {
-    background-color: #d7d7d7; /* Blanco Puro */
+    background-color: #823d1f; /* Blanco Puro */
     color: #000000;
 }
 #similares {
-    background-color: #2196F3; /* Azul Cielo */
+    background-color: #236155; /* Azul Cielo */
     color: #FFFFFF;
 }
 
 #instalacion {
-    background-color: #4CAF50; /* Verde Serpiente */
+    background-color: #1e8143; /* Verde Serpiente */
     color: #FFFFFF;
 }
 
 #contacto {
     padding: 20px 0;
-    background-color: #FFC107; /* Dorado Emplumado */
+    background-color: #e0ba51; /* Dorado Emplumado */
     color: #FFFFFF;
     text-align: center;
 }
@@ -45,3 +48,91 @@ img {
     max-width: 100%; 
     height: auto; 
 }
+
+.card-acerca {
+    background-color: #207A3D; /* Verde más claro */
+    color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card-niveles {
+    background-color: #A45D3D; /* Marrón más claro */
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card-similares {
+    background-color: #317D6B; /* Azul más claro */
+    color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card-instalacion {
+    background-color: #2A924F; /* Verde más claro */
+    color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card-contacto {
+    background-color: #F1DA7E; /* Dorado pálido */
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.text-pj{
+    color: #2196F3;
+}
+
+.text-enemy{
+    color: red;
+}
+
+.text-boss{
+    color: black;
+}
+
+.text-ant{
+    color: purple;
+}
+
+.section-title {
+    font-family: 'Arial', sans-serif; /* Fuente moderna y legible */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    color: #FFFFFF; /* Color blanco para resaltar */
+    background-color: #1e8143; /* Verde Serpiente */
+    padding: 20px; /* Espaciado interno */
+    margin: 0 -20px 20px -20px; /* Espaciado externo y negativo para compensar el padding */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Alineación centrada */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.card-title {
+    font-family: 'Arial', serif; /* Fuente clásica y elegante */
+    font-size: 1.5em; /* Tamaño de fuente mayor para títulos */
+    color: #1e8143; /* Verde Serpiente para coherencia */
+    margin-bottom: 15px; /* Espaciado inferior */
+    text-align: center; /* Alineación centrada */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    border-bottom: 2px solid #FFFFFF; /* Línea inferior */
+    padding-bottom: 5px; /* Espaciado interno */
+}
+
