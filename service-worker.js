@@ -16,6 +16,11 @@ const urlsToCache=[
     './img/nivel3.jpeg',
     './img/nivel2.jpeg',
     './img/nivel1.jpeg',
+    './img/boss.jpeg',
+    './img/mic.jpeg',
+    './img/pena.jpeg',
+    './img/tez.jpeg',
+    './img/quet.jpeg',
     'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js'

@@ -1,34 +1,38 @@
 let deferredPrompt;
-const installBtn = document.getElementById('installBtn');
+const installBtns = document.querySelectorAll('#installBtn1, #installBtn2');
 
 // Escucha el evento 'beforeinstallprompt'
 window.addEventListener('beforeinstallprompt', (e) => {
-// Previene la aparición del banner predeterminado
-e.preventDefault();
-deferredPrompt = e;
-// Muestra el botón de instalación
-installBtn.style.display = 'inline-block';
+    // Previene la aparición del banner predeterminado
+    e.preventDefault();
+    deferredPrompt = e;
 
-installBtn.addEventListener('click', async () => {
-    // Muestra el cuadro de diálogo de instalación
-    if (deferredPrompt) {
-        deferredPrompt.prompt();
-        const choiceResult = await deferredPrompt.userChoice;
-        if (choiceResult.outcome === 'accepted') {
-            console.log('PWA instalada');
-        } else {
-            console.log('PWA no instalada');
-        }
-        deferredPrompt = null;
-        }
+    // Muestra los botones de instalación
+    installBtns.forEach(btn => {
+        btn.style.display = 'inline-block';
+        btn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const choiceResult = await deferredPrompt.userChoice;
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('PWA instalada');
+                } else {
+                    console.log('PWA no instalada');
+                }
+                deferredPrompt = null;
+            }
+        });
     });
 });
 
 // Verifica si ya está instalada
 window.addEventListener('appinstalled', () => {
     console.log('PWA se instaló correctamente');
-    installBtn.style.display = 'none'; // Oculta el botón después de la instalación
+    installBtns.forEach(btn => {
+        btn.style.display = 'none'; // Oculta los botones después de la instalación
+    });
 });
+
 
 const url = 'https://mmo-games.p.rapidapi.com/games?category=third-Person';
 const options = {
