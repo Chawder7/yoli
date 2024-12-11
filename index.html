@@ -3,20 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self'; 
-    script-src 'self' https://cdn.jsdelivr.net; 
-    style-src 'self' https://cdn.jsdelivr.net; 
-    img-src 'self'; 
-    connect-src 'self'; 
-    object-src 'none';
-    upgrade-insecure-requests;">
-
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src
+    'self'; object-src 'none'; style-src 'self' https://stackpath.bootstrapcdn.com;">
     <title>YOLI</title>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/icon2.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar fixed-top" style="background-color: #52c75d;">
@@ -57,6 +50,7 @@
                 la historia de la creación se resume a manera de niveles con elementos de los 9 circulos la travesía por las
                 locaciones en el juego donde en cada nivel se encontraran distintas mecanicas y objetvos.
             </p>
+            <div class="card-deck">
             <div class="card-acerca">
                 <img src="./img/nivel1.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -64,6 +58,7 @@
                   <p class="card-text">Equipado con arco, felchas y  macuahuitl. Con esto se arbira paso a traves del Mictlán</p>
                   <p class="card-text"><small class="text-pj">P. Jugable</small></p>
                 </div>
+            </div>
             </div>
             <div class="card-acerca">
                 <img src="./img/nivel1.jpeg" class="card-img-top" alt="...">
@@ -187,7 +182,8 @@
     </footer>
     <script src="./app.js"></script>
     <script src="./scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

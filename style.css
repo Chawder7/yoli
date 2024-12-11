@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 .hero {
     background: url('img/hero3.jpg') no-repeat center center;
     background-size: cover;
@@ -9,9 +10,11 @@ body {
     padding: 100px 0;
     background-color: #2196F3; /* Azul Cielo */
 }
-.text-justify { 
-    text-align: justify; 
+
+.text-justify {
+    text-align: justify;
 }
+
 section {
     padding: 60px 0;
 }
@@ -21,36 +24,39 @@ section {
 }
 
 #acerca {
-    background-color: 	#185730; /* Dorado Emplumado */
+    background-color: #185730; /* Verde Serpiente */
     color: #FFFFFF;
 }
+
 #niveles {
-    background-color: #823d1f; /* Blanco Puro */
+    background-color: #823d1f; /* Marrón Tierra */
     color: #000000;
 }
+
 #similares {
-    background-color: #236155; /* Azul Cielo */
+    background-color: #236155; /* Azul Marino */
     color: #FFFFFF;
 }
 
 #instalacion {
-    background-color: #1e8143; /* Verde Serpiente */
+    background-color: #1e8143; /* Verde Selva */
     color: #FFFFFF;
 }
 
 #contacto {
     padding: 20px 0;
-    background-color: #e0ba51; /* Dorado Emplumado */
+    background-color: #e0ba51; /* Dorado */
     color: #FFFFFF;
     text-align: center;
 }
-img { 
-    max-width: 100%; 
-    height: auto; 
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .card-acerca {
-    background-color: #207A3D; /* Verde más claro */
+    background-color: #207A3D; /* Verde Claro */
     color: #FFFFFF;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -59,7 +65,7 @@ img {
 }
 
 .card-niveles {
-    background-color: #A45D3D; /* Marrón más claro */
+    background-color: #A45D3D; /* Marrón Claro */
     color: #000000;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -68,7 +74,7 @@ img {
 }
 
 .card-similares {
-    background-color: #317D6B; /* Azul más claro */
+    background-color: #317D6B; /* Azul Claro */
     color: #FFFFFF;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -77,7 +83,7 @@ img {
 }
 
 .card-instalacion {
-    background-color: #2A924F; /* Verde más claro */
+    background-color: #2A924F; /* Verde Vivo */
     color: #FFFFFF;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -86,7 +92,7 @@ img {
 }
 
 .card-contacto {
-    background-color: #F1DA7E; /* Dorado pálido */
+    background-color: #F1DA7E; /* Dorado Pálido */
     color: #000000;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -94,19 +100,19 @@ img {
     margin-bottom: 20px;
 }
 
-.text-pj{
+.text-pj {
     color: #2196F3;
 }
 
-.text-enemy{
+.text-enemy {
     color: red;
 }
 
-.text-boss{
+.text-boss {
     color: black;
 }
 
-.text-ant{
+.text-ant {
     color: purple;
 }
 
@@ -114,7 +120,7 @@ img {
     font-family: 'Arial', sans-serif; /* Fuente moderna y legible */
     font-size: 2.5em; /* Tamaño de fuente grande */
     color: #FFFFFF; /* Color blanco para resaltar */
-    background-color: #1e8143; /* Verde Serpiente */
+    background-color: #1e8143; /* Verde Selva */
     padding: 20px; /* Espaciado interno */
     margin: 0 -20px 20px -20px; /* Espaciado externo y negativo para compensar el padding */
     border-radius: 8px; /* Bordes redondeados */
@@ -127,7 +133,7 @@ img {
 .card-title {
     font-family: 'Arial', serif; /* Fuente clásica y elegante */
     font-size: 1.5em; /* Tamaño de fuente mayor para títulos */
-    color: #1e8143; /* Verde Serpiente para coherencia */
+    color: #1e8143; /* Verde Selva */
     margin-bottom: 15px; /* Espaciado inferior */
     text-align: center; /* Alineación centrada */
     text-transform: uppercase; /* Texto en mayúsculas */
@@ -135,4 +141,5 @@ img {
     border-bottom: 2px solid #FFFFFF; /* Línea inferior */
     padding-bottom: 5px; /* Espaciado interno */
 }
+
 

@@ -16,9 +16,9 @@ const urlsToCache=[
     './img/nivel3.jpeg',
     './img/nivel2.jpeg',
     './img/nivel1.jpeg',
-    'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js',
-    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',
-    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js'
+    'https://code.jquery.com/jquery-3.5.1.slim.min.js',
+    'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js',
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'
 ];
 
 self.addEventListener('install', event => {
